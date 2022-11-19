@@ -2,9 +2,9 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  root to: "pages#home"
+  root to: "pages#ask"
   # root "articles#index"
-  get "ask", to: "questions#ask"
-  get "answer", to: "questions#answer"
+  get "ask", to: "pages#ask"
+  get "answer", to: "pages#answer"
 
 end
